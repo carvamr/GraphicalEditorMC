@@ -19,7 +19,7 @@ namespace GraphicalEditorMC
 
             //transforma comando numa lista
             //1o elemento e o comando principal. restantes elementos sao os argumentos do comando
-            comm_dict = comando.Split(' ').ToList();
+            comm_dict = comando.ToUpper().Split(' ').ToList();
 
             //validacoes ao comando inserido
             testesUnitarios(ref comm_dict);
@@ -54,27 +54,33 @@ namespace GraphicalEditorMC
                             Convert.ToInt32(comm_dict[1]) >= 1 &&
                             Convert.ToInt32(comm_dict[1]) <= imagem.GetLength(0) &&
                             Convert.ToInt32(comm_dict[2]) >= 1 &&
-                            Convert.ToInt32(comm_dict[2]) <= imagem.GetLength(1)) return;
+                            Convert.ToInt32(comm_dict[2]) <= imagem.GetLength(1) &&
+                            comm_dict[3].Length == 1 &&
+                            comm_dict[3].Any(char.IsUpper)) return;
                         break;
                     case "V":
                         if (comm_dict.Count == 5 &&
-                           imagem.Length > 0 &&
-                           Convert.ToInt32(comm_dict[1]) >= 1 &&
-                           Convert.ToInt32(comm_dict[1]) <= imagem.GetLength(0) &&
-                           Convert.ToInt32(comm_dict[2]) >= 1 &&
-                           Convert.ToInt32(comm_dict[2]) <= imagem.GetLength(1) &&
-                           Convert.ToInt32(comm_dict[3]) >= 1 &&
-                           Convert.ToInt32(comm_dict[3]) <= imagem.GetLength(1)) return;
+                            imagem.Length > 0 &&
+                            Convert.ToInt32(comm_dict[1]) >= 1 &&
+                            Convert.ToInt32(comm_dict[1]) <= imagem.GetLength(0) &&
+                            Convert.ToInt32(comm_dict[2]) >= 1 &&
+                            Convert.ToInt32(comm_dict[2]) <= imagem.GetLength(1) &&
+                            Convert.ToInt32(comm_dict[3]) >= 1 &&
+                            Convert.ToInt32(comm_dict[3]) <= imagem.GetLength(1) &&
+                            comm_dict[4].Length == 1 &&
+                            comm_dict[4].Any(char.IsUpper)) return;
                         break;
                     case "H":
                         if (comm_dict.Count == 5 &&
-                           imagem.Length > 0 &&
-                           Convert.ToInt32(comm_dict[1]) >= 1 &&
-                           Convert.ToInt32(comm_dict[1]) <= imagem.GetLength(0) &&
-                           Convert.ToInt32(comm_dict[2]) >= 1 &&
-                           Convert.ToInt32(comm_dict[2]) <= imagem.GetLength(0) &&
-                           Convert.ToInt32(comm_dict[3]) >= 1 &&
-                           Convert.ToInt32(comm_dict[3]) <= imagem.GetLength(1)) return;
+                            imagem.Length > 0 &&
+                            Convert.ToInt32(comm_dict[1]) >= 1 &&
+                            Convert.ToInt32(comm_dict[1]) <= imagem.GetLength(0) &&
+                            Convert.ToInt32(comm_dict[2]) >= 1 &&
+                            Convert.ToInt32(comm_dict[2]) <= imagem.GetLength(0) &&
+                            Convert.ToInt32(comm_dict[3]) >= 1 &&
+                            Convert.ToInt32(comm_dict[3]) <= imagem.GetLength(1) &&
+                            comm_dict[4].Length == 1 &&
+                            comm_dict[4].Any(char.IsUpper)) return;
                         break;
                     case "X":
                         if (comm_dict.Count == 1) return;
