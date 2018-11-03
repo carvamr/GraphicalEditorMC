@@ -1,0 +1,6 @@
+Z:\Visual Studio 2015\Projects\GraphicalEditorMC\GraphicalEditorMC\bin\Debug\GraphicalEditorMC.exe.config
+Z:\Visual Studio 2015\Projects\GraphicalEditorMC\GraphicalEditorMC\bin\Debug\GraphicalEditorMC.exe
+Z:\Visual Studio 2015\Projects\GraphicalEditorMC\GraphicalEditorMC\bin\Debug\GraphicalEditorMC.pdb
+Z:\Visual Studio 2015\Projects\GraphicalEditorMC\GraphicalEditorMC\obj\Debug\GraphicalEditorMC.csprojResolveAssemblyReference.cache
+Z:\Visual Studio 2015\Projects\GraphicalEditorMC\GraphicalEditorMC\obj\Debug\GraphicalEditorMC.exe
+Z:\Visual Studio 2015\Projects\GraphicalEditorMC\GraphicalEditorMC\obj\Debug\GraphicalEditorMC.pdb
